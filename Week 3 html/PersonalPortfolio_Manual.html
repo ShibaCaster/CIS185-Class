@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew's Portfolio (Manual Responsive)</title>
+    <link rel="stylesheet" href="portfolio_manual.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Matthew's Project Portfolio</h1>
+            <p class="tagline">Student Web Developer & Designer</p>
+        
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+   
+   <!-- Main -->
+   <main>
+    <!-- Hero / About Section -->
+     <section id="about" class="hero">
+        <h2>About Me</h2>
+        <div class="about-containter">
+            <img src="https://cdn.discordapp.com/attachments/974857296561709059/1426728478191128688/att.nMXnRZSXg8BklM2B-PKT-DPCDMkW__y8ZP8_nJdtsWI.jpg?ex=68ec47f0&is=68eaf670&hm=247cfd2f3519b87794d79ddd1e0dbdc8d7da8346d96d47480ddeb81c130aa042&" alt="Portrait of Matthew and Link" />
+            <p>
+                Hello, my name is Matthew I'm a student at SPSCC currently learning about Web Development.
+                Im currently learning how to make responsive, user-friendly websites and apps through front-end development using HTML, CSS, and JavaScript.
+            </p>
+        </div>
+     </section>
+
+     <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>My work</h2>
+        <div class="project-grid">
+            <article class="project-card">
+                <img src="https://media.discordapp.net/attachments/974857296561709059/1425643921744068668/IMG_8826.jpg?ex=68e8fe9e&is=68e7ad1e&hm=79fb64082131bb6411025dd5e9922b97c4301911fad1fd7b84110cbc57b7a0ac&=&format=webp&width=623&height=831" alt="Project 1 preview" />
+                <h3>Project One</h3>
+                <p>Photo of Link taken at a beach.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="https://media.discordapp.net/attachments/974857296561709059/1425644289156841534/IMG_4670.jpg?ex=68e8fef5&is=68e7ad75&hm=28f6b2e8a04f18bc2cd97a3211456baa3d917707abd27106b52249bb0181ec9d&=&format=webp&width=623&height=831" alt="Project 2 preview" />
+                <h3>Project Two</h3>
+                <p>Photo of Link sleeping next to a turtle sqeuaky toy.</p>
+            </article>
+
+            <article class="project-card">
+                <img src="https://media.discordapp.net/attachments/974857296561709059/1420237311219597342/IMG_8600.jpg?ex=68e919d1&is=68e7c851&hm=4117fad27f8debc11fa5bf4feb2e1cdc626a57b537fdaa44d4a83dc516978f24&=&format=webp&width=1107&height=831" alt="Project 3 preview" />
+                <h3>Project Three</h3>
+                <p>Photo of Link walking next to a lake.</p>
+            </article>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+       <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <lable for="name">Name:</lable>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+       </section>
+   </main>
+
+   <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Matthew Hockett. All rights reserved.</p>
+        <nav>
+            <a href="#top">Back to top</a>
+            <a href="https://github.com/ShibaCaster">Github</a>
+        </nav>
+    </footer>
+</body>
+</html>
