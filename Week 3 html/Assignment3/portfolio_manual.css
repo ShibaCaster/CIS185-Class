@@ -1,0 +1,239 @@
+/* CSS Variables */
+:root {
+    --primary-color: #ff8000;
+    --secondart-color: #0525f5;
+    --text-color: #333;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://media.discordapp.net/attachments/974857296561709059/1426729491627249664/att.j9aBGr_RsnExyoxbQS2q4DgjfejB_0is-XT8h7U4lYc.jpg?ex=68ec48e2&is=68eaf762&hm=4b956d5ed3d11d2a72837ecbce82ac3e5ca0c4a210a992d9fc3ffe1cd775c7f8&=&format=webp&width=968&height=987');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 1.5em 1em;
+}
+
+header h1 {
+   margin: 0;
+}
+
+header nav ul{
+     display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 2em;
+    background: var(--secondary-color);
+}
+
+.hero img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    border-radius: 50%;
+}
+
+
+/* Projects section (Grid) */
+.projects {
+    padding: 2em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+.project-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 25%;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact {
+    padding: 2em;
+    background-image: url('https://media.discordapp.net/attachments/974857296561709059/1425644288129368176/IMG_8909.jpg?ex=68eba1f5&is=68ea5075&hm=8de8cdccc7e85ca253cfc92bdcb23d5b2f611ffd8ca122a7787328e1487602b3&=&format=webp&width=1107&height=831') ;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.7em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #343131;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer nav {
+    margin-top: 0.5em;
+}
+
+footer nav a {
+    color: #a5b4fc;
+    margin: 0 0.5em;
+    text-transform: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================== */
+/* Responsive Design Additions */
+/* =========================== */
+
+/* Default adjustments */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make text and containers adjust with viewport */
+body {
+    font-size: 1.1vw;
+}
+
+header h1 {
+    font-size: 3vw;
+}
+
+.hero, .projects, .contact {
+    padding: 5vh 5vw;
+}
+
+/* Mobile (320px-767px) */
+@media (max-width: 767px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 80%;
+    }
+
+    .project-card img {
+        width: 80%;
+    }
+
+    body {
+        font-size: 3.5vw;
+    }
+
+    header h1 {
+        font-size: 6vw;
+    }
+}
+
+/* Tablet (768px-1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero img {
+        width: 60%;
+    }
+
+     .project-card img {
+        width: 60%;
+     }
+
+     body {
+        font-size: 1.8vw;
+     }
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero img {
+        width: 40%;
+    }
+
+    .project-card img {
+        width: 25%;
+    }
+
+    body {
+        font-size: 1vw;
+    }
+}
