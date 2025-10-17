@@ -145,6 +145,6 @@ For me I like the Manual method over Bootstrap. Although Manual requires more ti
 
 ## Author
 
-**Matthew Hockett**
-Student Web Developer
-[GitHub: ShibaCaster](https://github.com/ShibaCaster)
+**Matthew Hockett** 
+Student Web Developer   
+[GitHub: ShibaCaster](https://github.com/ShibaCaster)   
